@@ -1,47 +1,193 @@
 
-.products {
-  direction: rtl;
-  text-align: center;
-  padding: 30px 15px;
-  background: #f7f8ef;
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>زرین دشتابی | محصولات طبیعی انگور</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Tahoma,Arial,sans-serif;
+  background:#fbfaf4;
+  color:#333;
+  line-height:1.9;
 }
+header{
+  background:#174d27;
+  color:white;
+  text-align:center;
+  padding:22px 10px;
+}
+header h1{margin:0;font-size:32px}
+header p{margin:5px}
+.hero{
+  text-align:center;
+  padding:35px 15px;
+  background:#f0f2e5;
+}
+.hero img{
+  width:100%;
+  max-width:850px;
+  max-height:390px;
+  object-fit:cover;
+  border-radius:20px;
+}
+.hero h2{color:#174d27;font-size:27px}
+.hero p{font-size:17px}
+.products{
+  padding:35px 15px;
+  text-align:center;
+}
+.products h2{
+  color:#174d27;
+  font-size:28px;
+  margin-bottom:25px;
+}
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+  max-width:1100px;
+  margin:auto;
+}
+.product-card{
+  background:white;
+  border-radius:18px;
+  padding:13px;
+  box-shadow:0 4px 15px #00000018;
+}
+.product-card img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  border-radius:13px;
+}
+.product-card h3{
+  color:#18532c;
+  font-size:21px;
+  margin:10px 0 3px;
+}
+.price{
+  color:#92702c;
+  font-weight:bold;
+  font-size:17px;
+  margin:8px;
+}
+.order{
+  display:inline-block;
+  background:#174d27;
+  color:white;
+  padding:9px 22px;
+  border-radius:25px;
+  text-decoration:none;
+  margin:10px;
+}
+.about{
+  background:#f0f2e5;
+  text-align:center;
+  padding:30px 15px;
+  margin:25px 15px;
+  border-radius:18px;
+}
+.about h2{color:#174d27}
+footer{
+  background:#174d27;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+</style>
+</head>
 
-.products h2 {
-  color: #174d27;
-  margin-bottom: 25px;
-}
+<body>
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
-  max-width: 1100px;
-  margin: auto;
-}
+<header>
+  <h1>زرین دشتابی</h1>
+  <p>طعم طبیعی و اصیل محصولات انگور</p>
+</header>
 
-.product-card {
-  background: white;
-  border-radius: 16px;
-  padding: 12px;
-  box-shadow: 0 4px 15px #00000018;
-  transition: 0.3s;
-}
+<section class="hero">
+  <img
+    src="https://static.wixstatic.com/media/edda4e_c5f5bd836c6f4f5fb567bb9b3b59a856~mv2.png"
+    alt="انگور زرد و مشکی و کشمش طبیعی زرین دشتابی">
+  <h2>از دل طبیعت، با کیفیت و اصالت</h2>
+  <p>عرضه مستقیم محصولات طبیعی زرین دشتابی</p>
+  <a class="order" href="https://wa.me/989101821046">
+    سفارش از طریق واتساپ
+  </a>
+</section>
 
-.product-card:hover {
-  transform: translateY(-6px);
-}
+<section class="products">
+  <h2>محصولات ما</h2>
 
-.product-card img {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 12px;
-}
+  <div class="product-grid">
 
-.product-card h3 {
-  color: #18532c;
-}
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/edda4e_df553ebdd0f74f41b38b1b951a38b4aa~mv2.png" alt="کشمش بیدانه زرین دشتابی">
+      <h3>کشمش بیدانه</h3>
+      <p class="price">هر کیلو ۴۰۰ هزار تومان</p>
+      <a class="order" href="https://wa.me/989101821046?text=سلام، کشمش بیدانه می‌خواهم">
+        سفارش محصول
+      </a>
+    </div>
 
-.product-card p {
-  color: #92702c;
-}
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/edda4e_79edeb903dba4feea4bd83bbe919c7e8~mv2.png" alt="کشمش شانی زرین دشتابی">
+      <h3>کشمش شانی</h3>
+      <p class="price">هر کیلو ۴۵۰ هزار تومان</p>
+      <a class="order" href="https://wa.me/989101821046?text=سلام، کشمش شانی می‌خواهم">
+        سفارش محصول
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/edda4e_ea862ce6dc1245d8b358d3f0bddc99b2~mv2.png" alt="مویز زرین دشتابی">
+      <h3>مویز</h3>
+      <p class="price">هر کیلو ۵۰۰ هزار تومان</p>
+      <a class="order" href="https://wa.me/989101821046?text=سلام، مویز می‌خواهم">
+        سفارش محصول
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/edda4e_b9ca602df1784f59b38414ee4d46615a~mv2.png" alt="شیره انگور زرین دشتابی">
+      <h3>شیره انگور</h3>
+      <p class="price">هر کیلو ۷۰۰ هزار تومان</p>
+      <a class="order" href="https://wa.me/989101821046?text=سلام، شیره انگور می‌خواهم">
+        سفارش محصول
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/edda4e_c4130d2c58b24d5e9f9ed5a1011f7b87~mv2.png" alt="آبغوره زرین دشتابی">
+      <h3>آبغوره</h3>
+      <p class="price">هر کیلو ۳۵۰ هزار تومان</p>
+      <a class="order" href="https://wa.me/989101821046?text=سلام، آبغوره می‌خواهم">
+        سفارش محصول
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="about">
+  <h2>چرا زرین دشتابی؟</h2>
+  <p>
+    کیفیت طبیعی، طعم اصیل و عرضه مستقیم محصولات انگور.
+    برای ثبت سفارش و دریافت اطلاعات بیشتر با ما در تماس باشید.
+  </p>
+  <a class="order" href="https://wa.me/989101821046">
+    ارتباط با ما در واتساپ
+  </a>
+</section>
+
+<footer>
+  <h3>زرین دشتابی</h3>
+  <p>شماره واتساپ: 09101821046</p>
+  <p>با سپاس از اعتماد شما</p>
+</footer>
+
+</body>
+</html>
