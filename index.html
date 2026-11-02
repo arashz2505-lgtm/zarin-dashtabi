@@ -1,188 +1,47 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>زرین دشتابی | فروشگاه محصولات انگور</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Tahoma;background:#faf7ed;color:#263c2b;line-height:1.9}
-header{background:#17452d;color:#fff;text-align:center;padding:30px}
-header h1{color:#e8c77b;font-size:35px;margin:0}
-nav{background:#e5c77d;padding:12px;text-align:center}
-nav a{color:#17452d;text-decoration:none;margin:10px;font-weight:bold}
-.hero{text-align:center;padding:65px 15px;background:linear-gradient(#173d2bd9,#173d2b99),url('https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=1400') center/cover;color:white}
-.hero h2{font-size:30px;color:#f4d994}
-.btn{display:inline-block;background:#c69a3d;color:white;padding:9px 22px;border-radius:25px;text-decoration:none}
-.section{max-width:1150px;margin:auto;padding:35px 15px}
-.section h2{text-align:center;color:#17452d}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
-.card{background:white;border-radius:16px;overflow:hidden;text-align:center;box-shadow:0 4px 16px #0001;border:1px solid #e9dfc9}
-.photo{height:230px;position:relative;overflow:hidden}
-.photo>img{width:100%;height:100%;object-fit:cover}
-.package{position:absolute;right:15px;bottom:12px;width:110px;height:160px;background:linear-gradient(135deg,#fff7dd,#e7d1a0);border:2px solid #b18a3d;border-radius:9px;text-align:center;padding:8px 5px;box-shadow:0 4px 12px #0005;color:#25442c}
-.package strong{display:block;font-size:15px;color:#17452d}
-.package small{display:block;color:#9a6c1e;font-weight:bold}
-.package .fruit{font-size:38px;margin:8px 0}
-.package.jar{height:135px;border-radius:20px 20px 15px 15px}
-.package.jar:before{content:"";display:block;height:10px;background:#17452d;margin:-8px 15px 5px;border-radius:4px}
-.info{padding:14px}
-.info h3{color:#17452d;margin:0}
-.price{font-size:18px;font-weight:bold;color:#a47820;margin:8px}
-footer{background:#17452d;color:white;text-align:center;padding:22px}
-</style>
-</head>
-<body>
 
-<header>
-<h1>زرین دشتابی</h1>
-<p>طعم اصالت و طبیعت در محصولات انگور</p>
-</header>
+.products {
+  direction: rtl;
+  text-align: center;
+  padding: 30px 15px;
+  background: #f7f8ef;
+}
 
-<nav>
-<a href="#home">خانه</a>
-<a href="#products">محصولات</a>
-<a href="#about">درباره ما</a>
-<a href="#contact">تماس</a>
-</nav>
+.products h2 {
+  color: #174d27;
+  margin-bottom: 25px;
+}
 
-<section class="hero" id="home">
-<h2>به فروشگاه زرین دشتابی خوش آمدید</h2>
-<p>محصولات طبیعی و اصیل انگور با کیفیت ممتاز</p>
-<a class="btn" href="#products">مشاهده محصولات</a>
-</section>
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: auto;
+}
 
-<section class="section" id="products">
-<h2>محصولات ویژه زرین دشتابی</h2>
-<div class="products">
+.product-card {
+  background: white;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 4px 15px #00000018;
+  transition: 0.3s;
+}
 
-<div class="card">
-<div class="photo">
-<img src="https://images.unsplash.com/photo-1596591606975-97ee5cef3a1e?w=700" alt="کشمش بیدانه">
-<div class="package">
-<strong>زرین دشتابی</strong>
-<small>کشمش بیدانه</small>
-<div class="fruit">🍇</div>
-<small>وزن ۱ کیلوگرم</small>
-</div>
-</div>
-<div class="info">
-<h3>کشمش بیدانه</h3>
-<p>خوش‌طعم و طبیعی</p>
-<div class="price">۴۰۰٬۰۰۰ تومان</div>
-<a class="btn" href="https://wa.me/989101821046?text=سفارش%20کشمش%20بیدانه">سفارش محصول</a>
-</div>
-</div>
+.product-card:hover {
+  transform: translateY(-6px);
+}
 
-<div class="card">
-<div class="photo">
-<img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=700" alt="کشمش شانی">
-<div class="package">
-<strong>زرین دشتابی</strong>
-<small>کشمش شانی</small>
-<div class="fruit">🍇</div>
-<small>وزن ۱ کیلوگرم</small>
-</div>
-</div>
-<div class="info">
-<h3>کشمش شانی</h3>
-<p>با طعم اصیل انگور شانی</p>
-<div class="price">۴۵۰٬۰۰۰ تومان</div>
-<a class="btn" href="https://wa.me/989101821046?text=سفارش%20کشمش%20شانی">سفارش محصول</a>
-</div>
-</div>
+.product-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+}
 
-<div class="card">
-<div class="photo">
-<img src="https://images.unsplash.com/photo-1515586000433-45406d8e6662?w=700" alt="مویز">
-<div class="package">
-<strong>زرین دشتابی</strong>
-<small>مویز ممتاز</small>
-<div class="fruit">🍇</div>
-<small>وزن ۱ کیلوگرم</small>
-</div>
-</div>
-<div class="info">
-<h3>مویز</h3>
-<p>دانه‌های تیره و خوش‌طعم</p>
-<div class="price">۵۰۰٬۰۰۰ تومان</div>
-<a class="btn" href="https://wa.me/989101821046?text=سفارش%20مویز">سفارش محصول</a>
-</div>
-</div>
+.product-card h3 {
+  color: #18532c;
+}
 
-<div class="card">
-<div class="photo">
-<img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=700" alt="شیره انگور">
-<div class="package jar">
-<strong>زرین دشتابی</strong>
-<small>شیره انگور طبیعی</small>
-<div class="fruit">🍯</div>
-<small>وزن ۱ کیلوگرم</small>
-</div>
-</div>
-<div class="info">
-<h3>شیره انگور</h3>
-<p>غلیظ و طبیعی</p>
-<div class="price">۷۰۰٬۰۰۰ تومان</div>
-<a class="btn" href="https://wa.me/989101821046?text=سفارش%20شیره%20انگور">سفارش محصول</a>
-</div>
-</div>
-
-<div class="card">
-<div class="photo">
-<img src="https://images.unsplash.com/photo-1596363505729-4190a9506133?w=700" alt="آبغوره">
-<div class="package jar">
-<strong>زرین دشتابی</strong>
-<small>آبغوره طبیعی</small>
-<div class="fruit">🍾</div>
-<small>حجم ۱ لیتر</small>
-</div>
-</div>
-<div class="info">
-<h3>آبغوره</h3>
-<p>ترش و طبیعی</p>
-<div class="price">۳۵۰٬۰۰۰ تومان</div>
-<a class="btn" href="https://wa.me/989101821046?text=سفارش%20آبغوره">سفارش محصول</a>
-</div>
-</div>
-
-<div class="card">
-<div class="photo">
-<img src="https://images.unsplash.com/photo-1596591606975-97ee5cef3a1e?w=700" alt="کشمش آفتابی">
-<div class="package">
-<strong>زرین دشتابی</strong>
-<small>کشمش آفتابی</small>
-<div class="fruit">☀️🍇</div>
-<small>وزن ۱ کیلوگرم</small>
-</div>
-</div>
-<div class="info">
-<h3>کشمش آفتابی</h3>
-<p>خشک‌شده به روش سنتی</p>
-<div class="price">استعلام قیمت</div>
-<a class="btn" href="https://wa.me/989101821046?text=قیمت%20کشمش%20آفتابی">استعلام قیمت</a>
-</div>
-</div>
-
-</div>
-</section>
-
-<section class="section" id="about">
-<h2>درباره زرین دشتابی</h2>
-<p style="text-align:center">عرضه محصولات طبیعی انگور با طعم اصیل و کیفیت ممتاز.</p>
-</section>
-
-<section class="section" id="contact">
-<h2>ارتباط با ما</h2>
-<p style="text-align:center">واتساپ: 09101821046</p>
-<p style="text-align:center">
-<a class="btn" href="https://wa.me/989101821046">سفارش از واتساپ</a>
-</p>
-</section>
-
-<footer>
-زرین دشتابی | کیفیت و اصالت محصولات انگور
-</footer>
-
-</body>
-</html>
+.product-card p {
+  color: #92702c;
+}
