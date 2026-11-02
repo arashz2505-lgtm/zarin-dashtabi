@@ -4,51 +4,28 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>زرین دشت آبی | فروش محصولات طبیعی</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>زرین دشت آبی | فروشگاه محصولات طبیعی</title>
 <style>
-body {
-  
-  margin: 0;
-  font-family: Tahoma, sans-serif;
-  background: #fffdf5;
-  color: #333;
-  text-align: center;
-}
-header {
-  background: #276749;
-  color: white;
-  padding: 30px 15px;
-}
-header h1 {font-size: 30px;}
-.hero {padding: 35px 15px;}
-.hero h2 {color: #276749;}
-.product {
-  background: white;
-  margin: 20px auto;
-  padding: 25px;
-  max-width: 350px;
-  border-radius: 15px;
-  box-shadow: 0 2px 12px #ddd;
-}
-.product img {
-  width: 100%;
-  border-radius: 12px;
-}
-button {
-  background: #276749;
-  color: white;
-  border: none;
-  padding: 13px 25px;
-  border-radius: 8px;
-  font-size: 16px;
-}
-footer {
-  background: #276749;
-  color: white;
-  padding: 25px;
-  margin-top: 40px;
-}
+*{box-sizing:border-box}
+body{margin:0;font-family:Tahoma,sans-serif;background:#fffdf5;color:#333;line-height:2}
+header{background:#214d37;color:white;text-align:center;padding:25px}
+header h1{font-size:32px;margin:0}
+nav{background:#183b2a;padding:13px;text-align:center}
+nav a{color:white;text-decoration:none;margin:12px;font-size:14px}
+.hero{background:#e8f0e5;text-align:center;padding:55px 15px}
+.hero h2{color:#214d37;font-size:28px}
+.hero p{font-size:17px}
+.btn{display:inline-block;background:#d9ad55;color:#183b2a;padding:12px 25px;border-radius:8px;text-decoration:none;font-weight:bold}
+section{padding:35px 15px;text-align:center}
+h2{color:#214d37}
+.products{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.product{background:white;width:280px;padding:20px;border-radius:15px;box-shadow:0 3px 15px #ddd}
+.product img{width:100%;border-radius:10px}
+.product h3{color:#276749}
+.product p{font-size:14px}
+.contact{background:#e8f0e5}
+footer{background:#214d37;color:white;text-align:center;padding:25px}
 </style>
 </head>
 <body>
@@ -58,17 +35,51 @@ footer {
 <p>طعم طبیعت، عطر آفتاب</p>
 </header>
 
-<section class="hero">
-<h2>به فروشگاه ما خوش آمدید</h2>
+<nav>
+<a href="#home">خانه</a>
+<a href="#about">درباره ما</a>
+<a href="#products">محصولات</a>
+<a href="#contact">تماس با ما</a>
+</nav>
+
+<div class="hero" id="home">
+<h2>به فروشگاه زرین دشت آبی خوش آمدید</h2>
 <p>عرضه محصولات طبیعی و کشمش آفتابی با کیفیت عالی</p>
+<a class="btn" href="#products">مشاهده محصولات</a>
+</div>
+
+<section id="about">
+<h2>درباره زرین دشت آبی</h2>
+<p>ما به طبیعت و محصولات سالم و طبیعی اهمیت می‌دهیم.
+هدف ما ارائه محصولات باکیفیت و معرفی طعم اصیل طبیعت است.</p>
 </section>
 
+<section id="products">
+<h2>محصولات فروشگاه</h2>
+<div class="products">
+
 <div class="product">
-<h2>کشمش آفتابی</h2>
-<p>محصول طبیعی، خوشمزه و باکیفیت</p>
-<p>برای سفارش با ما تماس بگیرید</p>
-<button onclick="location.href='tel:'">تماس برای سفارش</button>
+<div style="font-size:85px">🍇</div>
+<h3>کشمش آفتابی</h3>
+<p>کشمش طبیعی تهیه‌شده از انگور و خشک‌شده زیر نور خورشید.</p>
+<a class="btn" href="#contact">سفارش محصول</a>
 </div>
+
+<div class="product">
+<div style="font-size:85px">🌿</div>
+<h3>محصولات طبیعی</h3>
+<p>معرفی محصولات طبیعی و محلی زرین دشت آبی.</p>
+<a class="btn" href="#contact">اطلاعات بیشتر</a>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>ارتباط با ما</h2>
+<p>برای سفارش محصولات و دریافت اطلاعات بیشتر با ما در تماس باشید.</p>
+<p>شماره تماس: به‌زودی اضافه می‌شود</p>
+</section>
 
 <footer>
 <p>زرین دشت آبی</p>
