@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -22,6 +23,28 @@ padding:22px 10px
 }
 header h1{margin:0;font-size:32px}
 header p{margin:5px}
+.language-box{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+padding:15px;
+background:#fff
+}
+.language-box button{
+border:1px solid #174d27;
+background:white;
+color:#174d27;
+padding:9px 18px;
+border-radius:25px;
+cursor:pointer;
+font-size:15px
+}
+.language-box button.active,
+.language-box button:hover{
+background:#174d27;
+color:white
+}
 .hero{
 text-align:center;
 padding:35px 15px;
@@ -104,79 +127,252 @@ padding:25px
 <body>
 
 <header>
-<h1>زرین دشتابی</h1>
-<p>طعم طبیعی و اصیل محصولات انگور</p>
+<h1 data-fa="زرین دشتابی"
+data-ar="زارين دشتابي"
+data-en="Zarin Dashtabi">زرین دشتابی</h1>
+<p data-fa="طعم طبیعی و اصیل محصولات انگور"
+data-ar="الطعم الطبيعي والأصيل لمنتجات العنب"
+data-en="The Natural and Authentic Taste of Grape Products">
+طعم طبیعی و اصیل محصولات انگور
+</p>
 </header>
 
+<nav class="language-box">
+<button class="active" type="button" onclick="changeLanguage('fa',this)">🇮🇷 فارسی</button>
+<button type="button" onclick="changeLanguage('ar',this)">🇸🇦 العربية</button>
+<button type="button" onclick="changeLanguage('en',this)">🇬🇧 English</button>
+</nav>
+
 <section class="hero">
-<img src="https://static.wixstatic.com/media/edda4e_c5f5bd836c6f4f5fb567bb9b3b59a856~mv2.png" alt="انگور طبیعی زرین دشتابی">
-<h2>از دل طبیعت، با کیفیت و اصالت</h2>
-<p>عرضه مستقیم محصولات طبیعی زرین دشتابی</p>
-<a class="order" href="https://wa.me/989101821046">سفارش از طریق واتساپ</a>
+<img src="https://static.wixstatic.com/media/edda4e_c5f5bd836c6f4f5fb567bb9b3b59a856~mv2.png"
+alt="انگور طبیعی زرین دشتابی">
+
+<h2 data-fa="از دل طبیعت، با کیفیت و اصالت"
+data-ar="من قلب الطبيعة، بالجودة والأصالة"
+data-en="From Nature, with Quality and Authenticity">
+از دل طبیعت، با کیفیت و اصالت
+</h2>
+
+<p data-fa="عرضه مستقیم محصولات طبیعی زرین دشتابی"
+data-ar="البيع المباشر لمنتجات زارين دشتابي الطبيعية"
+data-en="Direct Supply of Zarin Dashtabi Natural Products">
+عرضه مستقیم محصولات طبیعی زرین دشتابی
+</p>
+
+<a class="order whatsapp"
+data-fa="سفارش از طریق واتساپ"
+data-ar="اطلب عبر واتساب"
+data-en="Order via WhatsApp"
+data-message-fa="سلام، برای سفارش محصولات زرین دشتابی پیام می‌دهم."
+data-message-ar="مرحباً، أتواصل معكم لطلب منتجات زارين دشتابي."
+data-message-en="Hello, I would like to order Zarin Dashtabi products."
+href="https://wa.me/989101821046">
+سفارش از طریق واتساپ
+</a>
 </section>
 
 <section class="products">
-<h2>محصولات ما</h2>
+<h2 data-fa="محصولات ما"
+data-ar="منتجاتنا"
+data-en="Our Products">محصولات ما</h2>
 
 <div class="product-grid">
 
-<!-- کشمش بیدانه -->
 <div class="product-card">
-<img src="https://static.wixstatic.com/media/edda4e_b9ca602df1784f59b38414ee4d46615a~mv2.png" alt="کشمش بیدانه زرین دشتابی">
-<h3>کشمش بیدانه</h3>
-<p class="price">هر کیلو ۴۰۰ هزار تومان</p>
-<a class="order" href="https://wa.me/989101821046?text=سلام، کشمش بیدانه می‌خواهم">سفارش محصول</a>
+<img src="https://static.wixstatic.com/media/edda4e_b9ca602df1784f59b38414ee4d46615a~mv2.png"
+alt="کشمش بیدانه زرین دشتابی">
+<h3 data-fa="کشمش بیدانه"
+data-ar="زبيب بدون بذور"
+data-en="Seedless Raisins">کشمش بیدانه</h3>
+<p class="price"
+data-fa="هر کیلو ۴۰۰ هزار تومان"
+data-ar="كل كيلوغرام ٤٠٠ ألف تومان"
+data-en="400,000 Tomans per kg">هر کیلو ۴۰۰ هزار تومان</p>
+<a class="order whatsapp"
+data-fa="سفارش محصول" data-ar="اطلب المنتج" data-en="Order Product"
+data-message-fa="سلام، کشمش بیدانه می‌خواهم"
+data-message-ar="مرحباً، أريد شراء زبيب بدون بذور"
+data-message-en="Hello, I would like to order seedless raisins"
+href="https://wa.me/989101821046">سفارش محصول</a>
 </div>
 
-<!-- کشمش شانی -->
 <div class="product-card">
-<img src="https://static.wixstatic.com/media/edda4e_79edeb903dba4feea4bd83bbe919c7e8~mv2.png" alt="کشمش شانی زرین دشتابی">
-<h3>کشمش شانی</h3>
-<p class="price">هر کیلو ۴۵۰ هزار تومان</p>
-<a class="order" href="https://wa.me/989101821046?text=سلام، کشمش شانی می‌خواهم">سفارش محصول</a>
+<img src="https://static.wixstatic.com/media/edda4e_79edeb903dba4feea4bd83bbe919c7e8~mv2.png"
+alt="کشمش شانی زرین دشتابی">
+<h3 data-fa="کشمش شانی"
+data-ar="زبيب شاني"
+data-en="Shani Raisins">کشمش شانی</h3>
+<p class="price"
+data-fa="هر کیلو ۴۵۰ هزار تومان"
+data-ar="كل كيلوغرام ٤٥٠ ألف تومان"
+data-en="450,000 Tomans per kg">هر کیلو ۴۵۰ هزار تومان</p>
+<a class="order whatsapp"
+data-fa="سفارش محصول" data-ar="اطلب المنتج" data-en="Order Product"
+data-message-fa="سلام، کشمش شانی می‌خواهم"
+data-message-ar="مرحباً، أريد شراء زبيب شاني"
+data-message-en="Hello, I would like to order Shani raisins"
+href="https://wa.me/989101821046">سفارش محصول</a>
 </div>
 
-<!-- مویز -->
 <div class="product-card">
-<img src="https://static.wixstatic.com/media/edda4e_c4130d2c58b24d5e9f9ed5a1011f7b87~mv2.png" alt="مویز زرین دشتابی">
-<h3>مویز</h3>
-<p class="price">هر کیلو ۵۰۰ هزار تومان</p>
-<a class="order" href="https://wa.me/989101821046?text=سلام، مویز می‌خواهم">سفارش محصول</a>
+<img src="https://static.wixstatic.com/media/edda4e_c4130d2c58b24d5e9f9ed5a1011f7b87~mv2.png"
+alt="مویز زرین دشتابی">
+<h3 data-fa="مویز"
+data-ar="زبيب أسود كبير"
+data-en="Black Raisins">مویز</h3>
+<p class="price"
+data-fa="هر کیلو ۵۰۰ هزار تومان"
+data-ar="كل كيلوغرام ٥٠٠ ألف تومان"
+data-en="500,000 Tomans per kg">هر کیلو ۵۰۰ هزار تومان</p>
+<a class="order whatsapp"
+data-fa="سفارش محصول" data-ar="اطلب المنتج" data-en="Order Product"
+data-message-fa="سلام، مویز می‌خواهم"
+data-message-ar="مرحباً، أريد شراء الزبيب الأسود"
+data-message-en="Hello, I would like to order black raisins"
+href="https://wa.me/989101821046">سفارش محصول</a>
 </div>
 
-<!-- شیره انگور: واحد فروش فقط لیتر -->
 <div class="product-card">
-<img src="https://static.wixstatic.com/media/edda4e_ea862ce6dc1245d8b358d3f0bddc99b2~mv2.png" alt="شیره انگور زرین دشتابی">
-<h3>شیره انگور</h3>
-<p class="price">هر لیتر ۷۰۰ هزار تومان</p>
-<a class="order" href="https://wa.me/989101821046?text=سلام، یک لیتر شیره انگور می‌خواهم">سفارش محصول</a>
+<img src="https://static.wixstatic.com/media/edda4e_ea862ce6dc1245d8b358d3f0bddc99b2~mv2.png"
+alt="شیره انگور زرین دشتابی">
+<h3 data-fa="شیره انگور"
+data-ar="دبس العنب"
+data-en="Grape Molasses">شیره انگور</h3>
+<p class="price"
+data-fa="هر لیتر ۷۰۰ هزار تومان"
+data-ar="كل لتر ٧٠٠ ألف تومان"
+data-en="700,000 Tomans per liter">هر لیتر ۷۰۰ هزار تومان</p>
+<a class="order whatsapp"
+data-fa="سفارش محصول" data-ar="اطلب المنتج" data-en="Order Product"
+data-message-fa="سلام، یک لیتر شیره انگور می‌خواهم"
+data-message-ar="مرحباً، أريد لترًا واحدًا من دبس العنب"
+data-message-en="Hello, I would like one liter of grape molasses"
+href="https://wa.me/989101821046">سفارش محصول</a>
 </div>
 
-<!-- آبغوره: واحد فروش فقط لیتر -->
 <div class="product-card">
-<img src="https://static.wixstatic.com/media/edda4e_df553ebdd0f74f41b38b1b951a38b4aa~mv2.png" alt="آبغوره زرین دشتابی">
-<h3>آبغوره</h3>
-<p class="price">هر لیتر ۳۵۰ هزار تومان</p>
-<a class="order" href="https://wa.me/989101821046?text=سلام، یک لیتر آبغوره می‌خواهم">سفارش محصول</a>
+<img src="https://static.wixstatic.com/media/edda4e_df553ebdd0f74f41b38b1b951a38b4aa~mv2.png"
+alt="آبغوره زرین دشتابی">
+<h3 data-fa="آبغوره"
+data-ar="عصير العنب الحامض"
+data-en="Verjuice">آبغوره</h3>
+<p class="price"
+data-fa="هر لیتر ۳۵۰ هزار تومان"
+data-ar="كل لتر ٣٥٠ ألف تومان"
+data-en="350,000 Tomans per liter">هر لیتر ۳۵۰ هزار تومان</p>
+<a class="order whatsapp"
+data-fa="سفارش محصول" data-ar="اطلب المنتج" data-en="Order Product"
+data-message-fa="سلام، یک لیتر آبغوره می‌خواهم"
+data-message-ar="مرحباً، أريد لترًا واحدًا من عصير العنب الحامض"
+data-message-en="Hello, I would like one liter of verjuice"
+href="https://wa.me/989101821046">سفارش محصول</a>
 </div>
 
 </div>
 </section>
 
 <section class="about">
-<h2>چرا زرین دشتابی؟</h2>
-<p>
+<h2 data-fa="چرا زرین دشتابی؟"
+data-ar="لماذا زارين دشتابي؟"
+data-en="Why Zarin Dashtabi?">چرا زرین دشتابی؟</h2>
+
+<p data-fa="کیفیت طبیعی، طعم اصیل و عرضه مستقیم محصولات انگور. برای ثبت سفارش و دریافت اطلاعات بیشتر با ما در تماس باشید."
+data-ar="جودة طبيعية، وطعم أصيل، وتوريد مباشر لمنتجات العنب. تواصلوا معنا لتسجيل الطلبات والحصول على مزيد من المعلومات."
+data-en="Natural quality, authentic taste, and direct supply of grape products. Contact us to place an order or get more information.">
 کیفیت طبیعی، طعم اصیل و عرضه مستقیم محصولات انگور.
 برای ثبت سفارش و دریافت اطلاعات بیشتر با ما در تماس باشید.
 </p>
-<a class="order" href="https://wa.me/989101821046">ارتباط با ما در واتساپ</a>
+
+<a class="order whatsapp"
+data-fa="ارتباط با ما در واتساپ"
+data-ar="تواصل معنا عبر واتساب"
+data-en="Contact Us on WhatsApp"
+data-message-fa="سلام، اطلاعات بیشتری درباره محصولات زرین دشتابی می‌خواهم."
+data-message-ar="مرحباً، أريد المزيد من المعلومات عن منتجات زارين دشتابي."
+data-message-en="Hello, I would like more information about Zarin Dashtabi products."
+href="https://wa.me/989101821046">
+ارتباط با ما در واتساپ
+</a>
 </section>
 
 <footer>
-<h3>زرین دشتابی</h3>
-<p>شماره واتساپ: 09101821046</p>
-<p>با سپاس از اعتماد شما</p>
+<h3 data-fa="زرین دشتابی"
+data-ar="زارين دشتابي"
+data-en="Zarin Dashtabi">زرین دشتابی</h3>
+
+<p data-fa="شماره واتساپ: 09101821046"
+data-ar="رقم واتساب: 09101821046"
+data-en="WhatsApp: 09101821046">
+شماره واتساپ: 09101821046
+</p>
+
+<p data-fa="با سپاس از اعتماد شما"
+data-ar="شكراً لثقتكم بنا"
+data-en="Thank you for your trust">
+با سپاس از اعتماد شما
+</p>
 </footer>
+
+<script>
+function changeLanguage(lang,button){
+
+document.documentElement.lang=lang;
+document.documentElement.dir=
+(lang==='en')?'ltr':'rtl';
+
+document.querySelectorAll('[data-fa]').forEach(function(el){
+el.textContent=el.getAttribute('data-'+lang);
+});
+
+document.querySelectorAll('.whatsapp').forEach(function(el){
+
+let message=el.getAttribute('data-message-'+lang);
+
+if(message){
+el.href='https://wa.me/989101821046?text='+encodeURIComponent(message);
+}else{
+el.href='https://wa.me/989101821046';
+}
+
+});
+
+document.querySelectorAll('.language-box button')
+.forEach(function(btn){
+btn.classList.remove('active');
+});
+
+button.classList.add('active');
+
+document.title={
+fa:'زرین دشتابی | محصولات طبیعی انگور',
+ar:'زارين دشتابي | منتجات العنب الطبيعية',
+en:'Zarin Dashtabi | Natural Grape Products'
+}[lang];
+
+try{
+localStorage.setItem('zarinLanguage',lang);
+}catch(e){}
+
+}
+
+window.addEventListener('DOMContentLoaded',function(){
+
+let saved='fa';
+
+try{
+saved=localStorage.getItem('zarinLanguage')||'fa';
+}catch(e){}
+
+let button=document.querySelector(
+'.language-box button[onclick*="'+saved+'"]'
+);
+
+if(button){
+changeLanguage(saved,button);
+}
+
+});
+</script>
 
 </body>
 </html>
